@@ -26,7 +26,7 @@ set_target_properties(
               crypto
               PROPERTIES
               IMPORTED_LOCATION
-              ${OPENSSL_MODULE_PATH}/libcrypto.so)
+              ${OPENSSL_MODULE_PATH}/x86/libcrypto.so)
 
  # 创建libssl库
 add_library(ssl SHARED IMPORTED)
@@ -35,7 +35,7 @@ set_target_properties(
               ssl
               PROPERTIES
               IMPORTED_LOCATION
-              ${OPENSSL_MODULE_PATH}/libssl.so)
+              ${OPENSSL_MODULE_PATH}/x86/libssl.so)
 
 add_library( # Sets the name of the library.
              native-lib
